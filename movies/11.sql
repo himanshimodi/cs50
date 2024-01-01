@@ -1,0 +1,1 @@
+SELECT movies.title FROM people JOIN stars ON people.id = stars.person_id JOIN movies on movies.id = stars.movie_id JOIN ratings ON ratings.movie_id = stars.movie_id WHERE name LIKE "CHADWICK BOSEMAN" ORDER BY rating DESC LIMIT 5;

@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <table class="table table-hover table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Symbol</th>
+            <th scope="col">Name</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Price</th>
+            <th scope="col">Total Price</th>
+
+
+          </tr>
+        </thead>
+        <tbody>
+            {%for symb, tup in return_dict.items()%}
+            <tr>
+                <td>{{symb}}</td>
+                <td>{{tup[1]}}</td>
+                <td>{{tup[2]}}</td>
+                <td>{{tup[3] | usd}}</td>
+                <td>{{tup[4] | usd }}</td>
+            </tr>
+            {%endfor%}
+
+        </tbody>
+
+    </table>
+    <table class="table table-hover table-striped">
+        <tbody>
+            <tr>
+                <th scope="row"> Total Stock Holdings</th>
+                <td>{{totality | usd}}</td>
+            </tr>
+            <tr>
+                <th scope="row"> Total Cash</th>
+                <td>{{money | usd}}</td>
+            </tr>
+            <tr>
+                <th scope="row"> Total Stock + Cash</th>
+                <td>{{(totality + money) | usd}}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Generic Online Course-Feedback</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+        <div class = "heady1">
+            <h1 class="display-1"><strong>Course Name</strong></h1>
+            <blockquote class="blockquote">
+                <p>The course that will change your life.</p>
+            </blockquote>
+         </div>
+         <div id = "linklist">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <!-- removed The aria-control -->
+                    <a class="navbar-brand" href="lectures.html">Lectures</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"  aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Homepage</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"  aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="about.html">About</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"  aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+          </div>
+          <div class = "feedy">
+            <p>
+
+
+            </p>
+            <h4 class="display-4">Feedback</h4>
+            <p class="lead">
+                   Your feedback is valuable to us. Please take the time to fill out this form so we can improve our course.
+            </p>
+          </div>
+          <div class = "feedy">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Full Name</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Phone Number</label>
+                    <input type="password" class="form-control" id="exampleInputPassword2">
+                </div>
+
+            </form>
+            </div>
+            <div class = "feedy">
+            <form class="was-validated">
+                <div class="mb-3">
+                  <label for="validationTextarea" class="form-label">Feedback</label>
+                  <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example feedback" required></textarea>
+                  <div class="invalid-feedback">
+                    Please enter your feedback.
+                  </div>
+                </div>
+            </form>
+            <button type="button" class="btn btn-primary" id = "submit" onclick = alerter()>Submit</button>
+           </div>
+
+          
+          <script>
+            function alerter(){
+                alert("Submitted");
+            }
+
+          </script>
+
+    </body>
+
+</html>

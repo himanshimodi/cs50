@@ -1,0 +1,32 @@
+sort1 uses: Bubble Sort
+Bubble Sort
+How do you know?:completes sorted list fast (good omega complexity)
+0.122 random5000
+7.904 50000
+
+sorted50000
+2.254 s
+
+completes an already sorted list fast
+
+sort2 uses: Merge sort
+Merge Sort
+
+How do you know?: Best time among all3
+random5000 time 0.040
+50000- 1.005
+
+exceptionally low running time on random50000
+
+sort3 uses: Selection sort
+Selection Sort
+
+How do you know?:bad already sorted time poor omega complexity
+random5000 time = 0.059s
+50000- 6.641s
+
+sorted50000 4.947
+
+Takes exceptionally long to sort an already sorted list
+
+
